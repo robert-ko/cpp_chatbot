@@ -29,7 +29,11 @@ public:
 
     //// STUDENT CODE
     ////
-
+    // Task 2 : The Rule Of Five
+    ChatBot(const ChatBot &source); // Copy contructor
+    ChatBot &operator=(const ChatBot &source); // Copy assignment operator
+    ChatBot(ChatBot &&source); // Move constructor
+    ChatBot &operator=(ChatBot &&source); // Move assignment operator
     ////
     //// EOF STUDENT CODE
 
